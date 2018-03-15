@@ -1,0 +1,17 @@
+ 
+2018-03-15 15:26:35,561 - root - INFO - Starting export. parserfile=/home/asmorodskyi/source/result_phy2phy_tput_p2p.csv targeturl=http://fromm.arch.suse.de:8086 HW=aribeach-fromm
+2018-03-15 15:26:35,561 - root - INFO - Posting data - throughput,testcase=rfc2544_throughput,traffic_type=udp,packetsize=64,vswitch=OvsVanilla,hw=aribeach-fromm value=927.080
+2018-03-15 15:26:35,563 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTP connection (1): fromm.arch.suse.de
+2018-03-15 15:26:35,567 - root - INFO - Response from DB: <Response [204]>
+2018-03-15 15:26:35,567 - root - INFO - Posting data - throughput,testcase=rfc2544_throughput,traffic_type=udp,packetsize=128,vswitch=OvsVanilla,hw=aribeach-fromm value=1860.320
+2018-03-15 15:26:35,568 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTP connection (1): fromm.arch.suse.de
+2018-03-15 15:26:35,571 - root - INFO - Response from DB: <Response [204]>
+2018-03-15 15:26:35,572 - root - INFO - Posting data - throughput,testcase=rfc2544_throughput,traffic_type=udp,packetsize=512,vswitch=OvsVanilla,hw=aribeach-fromm value=3900.690
+2018-03-15 15:26:35,574 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTP connection (1): fromm.arch.suse.de
+2018-03-15 15:26:35,577 - root - INFO - Response from DB: <Response [204]>
+2018-03-15 15:26:35,578 - root - INFO - Posting data - throughput,testcase=rfc2544_throughput,traffic_type=udp,packetsize=1024,vswitch=OvsVanilla,hw=aribeach-fromm value=5218.934
+2018-03-15 15:26:35,579 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTP connection (1): fromm.arch.suse.de
+2018-03-15 15:26:35,582 - root - INFO - Response from DB: <Response [204]>
+2018-03-15 15:26:35,582 - root - INFO - Posting data - throughput,testcase=rfc2544_throughput,traffic_type=udp,packetsize=1518,vswitch=OvsVanilla,hw=aribeach-fromm value=10077.152
+2018-03-15 15:26:35,584 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTP connection (1): fromm.arch.suse.de
+2018-03-15 15:26:35,586 - root - INFO - Response from DB: <Response [204]>
