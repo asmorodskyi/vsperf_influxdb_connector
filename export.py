@@ -15,8 +15,10 @@ HW = 'aribeach-fromm'
 with open(args.parsefile, 'rb') as csvfile:
     csvreader = csv.DictReader(csvfile, delimiter=',')
     for row in csvreader:
-        request_string = 'throughput,testcase={0},traffic_type={1},packetsize={2},vswitch={3},hw={4} value={5}'.format(
-            row['type'], row['traffic_type'], row['packet_size'], row['vswitch'], HW, row['throughput_rx_mbps'])
+        request_string = 'throughput, testcase = {0}, traffic_type = {1}, \
+        packetsize = {2},vswitch = {3},hw = {4} value ={5}'.format(
+            row['type'], row['traffic_type'], row['packet_size'],
+            row['vswitch'], HW, row['throughput_rx_mbps'])
         print 'Will post {0} to {1} '.format(request_string, url)
         response = requests.post(url, data=request_string)
         print 'Response from DB: {0}'.format(response)
