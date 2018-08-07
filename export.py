@@ -15,7 +15,7 @@ def parse_csv(parsefile, os_version, os_build, vswitch_version, openqa_url):
                 .format(row['type'], row['traffic_type'])
             request_string += 'packetsize={0},vswitch={1},' \
                 .format(row['packet_size'], row['vswitch'])
-            request_string += 'os_version={0},os_build={1},vswitch_version={2}'.format(
+            request_string += 'os_version={0},os_build={1},vswitch_version={2},'.format(
                 os_version, os_build, vswitch_version)
             request_string += 'openqa_url={0} value={1}'.format(
                 openqa_url, row['throughput_rx_mbps'])
