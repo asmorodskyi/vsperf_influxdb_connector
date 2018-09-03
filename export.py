@@ -87,8 +87,9 @@ elif args.parsefolder:
     result_folders_list = [folder for folder in os.listdir(
         args.parsefolder) if R.match(folder)]
     for result_folder in result_folders_list:
-        parsefile = '{0}/{1}/result_0_phy2phy_tput_p2p.csv'.format(
-            args.parsefolder, result_folder)
+        for file in os.listdir(result_folder):
+            if file.endswith(".csv"):
+                parsefile = os.path.join(args.parsefolder, result_folder, file)
         logging.info('Parsing file {0}'.format(parsefile))
         parse_csv(parsefile, args.os_version, args.os_build,
                   args.vswitch_version, args.openqa_url)
